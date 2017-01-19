@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Available</string>
+    <string name="action_settings">Clear</string>
+    <string name="not_connected">GoogleApiClient not yet connected. Try again.</string>
+</resources>
