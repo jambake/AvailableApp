@@ -18,7 +18,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_marginTop="16dp"
-        android:text="Address:" />
+        android:text="@string/address" />
     <TextView
         android:id="@+id/street_number_name"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:layout_alignBaseline="@id/address_label"
         android:layout_toRightOf="@id/address_label"
         android:textSize="16sp"
-        android:text="(street)"/>
+        android:text="@string/street"/>
     <TextView
         android:id="@+id/city_name"
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         android:layout_below="@id/address_label"
         android:layout_alignLeft="@id/street_number_name"
         android:textSize="16sp"
-        android:text="(city)" />
+        android:text="@string/city" />
     <TextView
         android:id="@+id/state_name"
         android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
         android:layout_below="@id/address_label"
         android:layout_toRightOf="@id/city_name"
         android:textSize="16sp"
-        android:text="(state)"/>
+        android:text="@string/state"/>
     <TextView
         android:id="@+id/zip_code"
         android:layout_width="wrap_content"
@@ -56,7 +56,8 @@
         android:layout_below="@id/city_name"
         android:layout_alignLeft="@id/city_name"
         android:textSize="16sp"
-        android:text="(zip code)"/>
+        android:text="@string/zip_code"/>
+
 
     <Button
         android:id="@+id/edit_button"
@@ -64,6 +65,13 @@
         android:layout_height="wrap_content"
         android:text="@string/edit"
         android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_button"/>
 
     <Button
         android:id="@+id/get_location"
@@ -72,6 +80,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="@string/get_location"/>
+    <Button
+        android:id="@+id/im_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/get_location"
+        android:text="@string/i_m_available"/>
+
 
     <TextView
         android:id="@+id/lat_label"
@@ -82,7 +99,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_marginTop="128dp"
-        android:text="Latitude:" />
+        android:text="@string/latitude" />
     <TextView
         android:id="@+id/lat_val"
         android:layout_width="wrap_content"
@@ -92,7 +109,7 @@
         android:textIsSelectable="true"
         android:layout_alignBaseline="@id/lat_label"
         android:layout_toRightOf="@id/lat_label"
-        android:text="(latitude goes here)"/>
+        android:text="@string/latitude_goes_here"/>
     <TextView
         android:id="@+id/long_label"
         android:layout_width="wrap_content"
@@ -102,7 +119,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_marginTop="8dp"
-        android:text="Longitude:" />
+        android:text="@string/longitude" />
     <TextView
         android:id="@+id/long_val"
         android:layout_width="wrap_content"
@@ -112,7 +129,7 @@
         android:layout_alignBaseline="@id/long_label"
         android:layout_toRightOf="@id/long_label"
         android:textSize="16sp"
-        android:text="(longitude goes here)"/>
+        android:text="@string/longitude_goes_here"/>
 
 </RelativeLayout>
 

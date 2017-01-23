@@ -5,4 +5,15 @@
     <string name="edit_button">edit</string>
     <string name="edit">edit</string>
     <string name="get_location">get location</string>
+    <string name="save">save</string>
+    <string name="i_m_available">i\'m available!</string>
+    <string name="zip_code">(zip code)</string>
+    <string name="address">Address:</string>
+    <string name="street">(street)</string>
+    <string name="city">(city)</string>
+    <string name="state">(state)</string>
+    <string name="latitude">Latitude:</string>
+    <string name="latitude_goes_here">(latitude goes here)</string>
+    <string name="longitude">Longitude:</string>
+    <string name="longitude_goes_here">(longitude goes here)</string>
 </resources>
