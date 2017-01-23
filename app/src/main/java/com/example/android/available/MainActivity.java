@@ -1,5 +1,6 @@
 package com.example.android.available;
 
+import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity
     protected Location mCurrentLocation;
     protected ImageButton getLocationButton;
 
-    protected Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
-    protected List<android.location.Address> addresses;
+    public Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+    public List<Address> addresses;
 
     protected TextView mStreetText;
     protected TextView mCityText;
@@ -56,10 +57,12 @@ public class MainActivity extends AppCompatActivity
         buildGoogleApiClient();
 
         getLocationButton = (ImageButton) findViewById(R.id.get_location);
+
         getLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                try {addresses = geocoder.getFromLocation(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude(), 3);}
+
+                try {addresses = geocoder.getFromLocation(mCurrentLocation.getLatitude(), mCurrentLocation.getLongitude(), 1);}
                 catch (IOException e) {e.printStackTrace();}
 
                 String address = addresses.get(0).getAddressLine(0);
