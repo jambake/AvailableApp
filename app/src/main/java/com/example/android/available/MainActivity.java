@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity
     protected TextView mLongitudeText;
     protected LocationRequest mLocationRequest;
     protected Location mCurrentLocation;
-    protected ImageButton getLocationButton;
+    protected Button getLocationButton;
 
     public Geocoder geocoder = new Geocoder(this, Locale.getDefault());
     public List<Address> addresses;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity
 
         buildGoogleApiClient();
 
-        getLocationButton = (ImageButton) findViewById(R.id.get_location);
+        getLocationButton = (Button) findViewById(R.id.get_location);
 
         getLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override

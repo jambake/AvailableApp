@@ -58,15 +58,20 @@
         android:textSize="16sp"
         android:text="(zip code)"/>
 
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:layout_alignParentRight="true"/>
 
-    <ImageButton
+    <Button
         android:id="@+id/get_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_thumb_up_white_48dp" />
-
+        android:text="@string/get_location"/>
 
     <TextView
         android:id="@+id/lat_label"
@@ -111,12 +116,3 @@
 
 </RelativeLayout>
 
-    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="256dp"-->
-    <!--android:layout_marginTop="24dp"-->
-    <!--android:id="@+id/map"-->
-    <!--tools:context=".MapsActivity"-->
-    <!--android:layout_below="@id/zip_code"-->
-    <!--android:name="com.google.android.gms.maps.SupportMapFragment" />-->
